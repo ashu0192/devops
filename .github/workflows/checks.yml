@@ -32,7 +32,11 @@ jobs:
       - name: Check cluster info
         run: kubectl cluster-info
 
-      - name: Deploy to Kubernetes
+      - name: Deploy Django app
         run: |
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
+          # Wait until pod is ready
+          kubectl wait --for=condition=ready pod -l app=django-app --timeout=120s
+          kubectl get pods
+          kubectl get svc
