@@ -16,6 +16,7 @@ jobs:
       - name: Build Docker Image
         run: docker build -t ashutosh0192docker/django-app:latest .
 
+
       - name: Push Docker Image
         run: docker push ashutosh0192docker/django-app:latest
 
