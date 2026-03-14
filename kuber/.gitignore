@@ -1,11 +1,65 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
 venv/
 env/
 .venv/
-__pycache__/
-*.pyc
-db.sqlite3
+ENV/
+
+# Environment variables
 .env
-.github/
+.env.*
+
+# Django database
+db.sqlite3
+db.sqlite3-journal
+
+# Django logs
+*.log
+
+# Static & media build folders
+staticfiles/
+media/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDE / Editor
 .vscode/
 .idea/
-*.log
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage / testing
+htmlcov/
+.coverage
+.coverage.*
+
+# Node (if you use frontend)
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints
+
+# GitHub workflows
+.github/
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
