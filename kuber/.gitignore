@@ -57,7 +57,7 @@ node_modules/
 .ipynb_checkpoints
 
 # GitHub workflows
-.github/
+
 
 # Temporary files
 *.swp
